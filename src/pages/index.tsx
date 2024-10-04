@@ -69,7 +69,7 @@ const TeamPatch: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-4 w-80">
         <div className="col-span-6">
           {/* Icônes */}
           <div className="mt-4">
@@ -118,7 +118,7 @@ const TeamPatch: React.FC = () => {
               className="mt-2"
             />
           </div>
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid grid-cols-12 gap-4 w-80">
             <div className="col-span-10">
               <div className="mt-4">
                 <h3 className="text-xl font-semibold">Choisir une image de fond :</h3>
