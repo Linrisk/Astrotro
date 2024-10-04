@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { CirclePicker } from "react-color";
 import html2canvas from "html2canvas";
+import { useRouter } from "next/router";
 
 const TeamPatch: React.FC = () => {
   const [teamName, setTeamName] = useState<string>("");
@@ -19,8 +20,7 @@ const TeamPatch: React.FC = () => {
   });
 
   const [seconds, setSeconds] = useState<number>(1200);
-
-  // Référence pour l'élément à capturer
+  const router = useRouter();
   const patchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -222,11 +222,11 @@ const TeamPatch: React.FC = () => {
               </button>
 
               <button
-                className="mt-4 bg-purple-500 text-white p-2 rounded hover:bg-purple-600 hover:bg-opacity-80 transition duration-300"
-                onClick={handleValidate}
-              >
-                EP3
-              </button>
+  className="mt-4 bg-purple-500 text-white p-2 rounded hover:bg-purple-600 hover:bg-opacity-80 transition duration-300"
+  onClick={() => router.push("/epreuveTrois")}
+>
+  EP3
+</button>
             </div>
           </div>
         </div>
