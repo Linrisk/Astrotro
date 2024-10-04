@@ -60,7 +60,7 @@ body{
 
 .wrapper-div-all{
   max-width: 95% !important;
-  height: 100vh;
+  height: 100vh !important;
   background-color: #0a0a0a;
   justify-content: center;
   align-items: center;
@@ -81,4 +81,14 @@ body{
   align-items: center;
   margin:0;
   padding:0;
+}
+
+.col-option{
+  width:100% !important;
+}
+
+#__next{
+  justify-content: center;
+  align-content: center;
+  display: flex;
 }
